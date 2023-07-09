@@ -9,13 +9,13 @@ fetch('https://rickandmortyapi.com/api/character' ,
         console.log(json)
         container.innerHTML+=`
 
-            <div> <img src=` + results.image + `> </div><br>
+            <div> <img height="200px"src=` + results.image + `> </div><br>
             <div class="teste"> </div>
             <strong class="name"> ` + results.name + `</strong><br>
             <div class="teste"> </div>
-            <span class="species">Especie:` + results.species + `</span><br>
+            <span class="species">Especie: ` + results.species + `</span><br>
             <div class="teste1"> </div>
-            <i class="status">Status: ` + results.status + `</i><br>
+            <span class="status">Status: ` + results.status + `</span><br>
             <div class="teste2"> </div>
             <hr>
             `;

@@ -10,10 +10,12 @@ const createElement = (tag, className) =>
     element.className = className;
     return element;
 }
+
 let firstCard = '';
 let secondCard = '';
 
 const checkEndGame = () =>{
+    
     const disabledCards = document.querySelectorAll('.disabled-card');
 
     if(disabledCards.length === 20){
@@ -23,6 +25,7 @@ const checkEndGame = () =>{
 }
 
 const checkCards = () =>{
+
     const firstCharacter = firstCard.getAttribute('data-character');
     const secondCharacter = secondCard.getAttribute('data-character');
 
@@ -45,7 +48,9 @@ const checkCards = () =>{
         }, 500)
     }
 }
+
 const revealCard = ({target}) => {
+
     if (target.parentNode.className.includes('reveal-card')){return;}
 
     if(firstCard === ''){
@@ -58,7 +63,9 @@ const revealCard = ({target}) => {
         checkCards();
     }
 }
+
 const createCard = (character) =>{
+
     const card = createElement('div' , 'card');
     const front = createElement('div' , 'face front');
     const back = createElement('div' , 'face back');
@@ -70,9 +77,12 @@ const createCard = (character) =>{
 
     card.addEventListener('click', revealCard);
     card.setAttribute('data-character' , character);
+
     return card;
 }
+
 const loadGame = () => {
+
     const duplicateCharacters = [...characters, ...characters];
 
     const sortArray = duplicateCharacters.sort(() => Math.random() - 0.5);
@@ -84,12 +94,15 @@ const loadGame = () => {
 }
 
 const startTimer = () =>{
+
     this.loop = setInterval(() => {
         const currentTimer = +timer.innerHTML;
         timer.innerHTML = currentTimer + 1;
     },1000)
 }
+
 window.onload = () => {
+
     spanPlayer.innerHTML = localStorage.getItem('player');
     startTimer();
     loadGame();
