@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Martian+Mono&family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  font-family: 'Press Start 2P', cursive;  
+}
+body{
+    width: 100vw;
+    height: 100%;
+    /*background: linear-gradient(98deg , #0f0f0f , #162d3d , #021d44);*/
+    background-image: url("/RM/wallp.jpeg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+img{
+    width: 300px;
+}
+.api-button , .game-button{
+    background-color: #ff3ba7ea;
+    border-radius: 8px;
+    color: #2afa3b;
+    cursor:pointer;
+    font-size: 10px;
+    max-width: 140px;
+    padding: 20px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 70px;
+    text-shadow: 0 0 15px #ffff00;
+    color: #00ffff;
+    animation: title 1s infinite;
+}
+
+@keyframes title {
+    50%{
+        text-shadow: 0 0 15px #00ffff;
+        color: #ffff00;
+    }
+}

@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <script defer src="../js/login.js"></script>
-    <title>Jogo da Memoria - Rick and Morty</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+
+    <title>Rick and Morty</title>
+    
 </head>
 <body class="body">
-
-    <form class="login-form">
+    <main class="main">
+        <form class="api-form">
         <div class="login-header">
-            <img defer src="../RM/logo.png" alt="brain">
-            <img defer src="../RM/cerebro.jpg" alt="brain">
-            <h1>Jogo da Memoria</h1>
+
+            <img src="/RM/logo.png">
         </div>
-        <input type="text" placeholder="Name" class="login-input" >
-        <button type="submit" class="login-button" desabled>Play</button>
+        <button onclick="APIPersonagens()" class="api-button">Personagens</button>
+        
     </form>
+    <form class="game-form1">
+        <button onclick="Game()" class="game-button" >Jogo da Memória</button>
+
+    </form>
+    </main>
+    
 </body>
 </html>
