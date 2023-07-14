@@ -22,7 +22,7 @@ img{
     width: 100%;
     margin-top: 10px;
     margin-left: 70px;
-    text-shadow: 0 0 15px #ffff00;
+    text-shadow: 0 0 15px #00ff00d0;
     color: #00ffff;
     animation: title 1s infinite;
 }
@@ -30,6 +30,6 @@ img{
 @keyframes title {
     50%{
         text-shadow: 0 0 15px #00ffff;
-        color: #ffff00;
+        color: #00ff00d0;
     }
 }
