@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     width: 100vw;
     height: auto;
@@ -5,6 +9,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+main{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    width: 90%;
+    margin: 1rem;
 }
 h1{
     font-size: 5rem;
@@ -19,16 +35,17 @@ h1{
         color: #ffff00;
     }
 }
-main{
-    margin-top: 1rem;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.finder-character{
+    width: 30rem;
+    height: 1rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: #1c272efa;
+    padding: 1rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.container{
+.container-cards{
     width: 100%;
     height: auto;
     display: flex;
@@ -36,40 +53,41 @@ main{
     align-items: center;
     flex-wrap: wrap;
 }
-.name{
-    font-size: 30px;
-    color: #00ffff;
-    font-family: 'Delicious Handrawn', cursive;
-}
-.species , .status{
-    font-size: 25px;
-    color: #ffffff;
-    font-family: 'Delicious Handrawn', cursive;
-}
-.div1{
-
-    height: auto;
+.card-character{
+    width: 350px;
+    height: 190px;
+    background-color: #f1f4f811;
+    border: groove 6px rgba(254, 254, 255, 0);
+    margin: 1rem;
     display: flex;
+    border-radius: 10px;
 }
-.div-img{
-    margin-top: 60px;
-    width:100%;
-    height: auto;
+.card-character > img{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
 }
-.finder-character{
-    width: 30rem;
-    height: 1rem;
-    font-size: 1.2rem;
-    border-radius: 20px;
-    background-color: #1c272e;
-    padding: 1rem;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+.card-character > .description-card {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
 }
-.cards {
-    height: auto;
-    display: grid;
-    width: 100%;
-    max-width: 400px;
-    margin: 10px auto;
+.description-card > h2{
+    margin-top: 5px;
+    text-align: center;
+    color: #00ffff;
+    text-shadow: 0 0 15px #ffffff;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 23px;
+}
+.description-card > i{
+    text-align:center;
+    margin-left: 10px;
+    color: rgba(255, 255, 0, 0.808);
+    margin-top: 10px;
+    font-family: 'Martian Mono', monospace , italic;
+    font-size: 10px;
 }
