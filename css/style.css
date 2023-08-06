@@ -2,7 +2,7 @@ body{
     width: 100vw;
     height: 100%;
     /*background: linear-gradient(98deg , #0f0f0f , #162d3d , #021d44);*/
-    background-image: url("/RM/wallp.jpeg");
+    background-image: url("/Projeto-Jogo-da-Memoria/RM/wallp.jpeg");
     background-size: 100%;
     display: flex;
     flex-direction: column;
@@ -10,6 +10,9 @@ body{
 }
 img{
     width: 300px;
+}
+main{
+    margin-top: 100px;
 }
 .api-button , .game-button{
     background-color: #ff3ba7ea;
@@ -26,7 +29,6 @@ img{
     color: #00ffff;
     animation: title 1s infinite;
 }
-
 @keyframes title {
     50%{
         text-shadow: 0 0 15px #00ffff;
